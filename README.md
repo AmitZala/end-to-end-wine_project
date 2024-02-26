@@ -59,7 +59,7 @@ pip install -r requirements.txt
 
 # 3. Create ECR repo to store/save docker image
 
--
+- 830145357240.dkr.ecr.ap-south-1.amazonaws.com/mlproject
 
 # 4. Create EC2 machine (Ubuntu)
 
