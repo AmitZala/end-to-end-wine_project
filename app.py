@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask,render_template, request
 import os 
 import numpy as np
 import pandas as pd
@@ -19,7 +19,7 @@ def training():
 
 @app.route('/predict',methods=['POST','GET'])
 def index():
-    if request.method == 'Post':
+    if request.method == 'POST':
         try:
             #  reading the inputs given by the user
             fixed_acidity =float(request.form['fixed_acidity'])
