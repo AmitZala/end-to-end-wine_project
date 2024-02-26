@@ -7,12 +7,12 @@ from wine_project.pipeline.prediction import PredictionPipeline
 app = Flask(__name__) # initializing a flask app
 
 
-@app.route('/',methods=['GET']:)
+@app.route('/',methods=['GET'])
 def homePage():
     return render_template('index.html')
 
 
-@app.route('/train',methods=['GET']):
+@app.route('/train',methods=['GET'])
 def training():
     os.system('python main.py')
     return "Training Successful!"
